@@ -1385,7 +1385,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #d4c9ff;
+    background: #c21b78;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2868,4 +2868,8 @@ header.header {
 }
 .site-author-name {
   display: none;
+}
+/* 隱藏文章標題上方的路徑導覽 (Breadcrumb) */
+.breadcrumb {
+  display: none !important;
 }
