@@ -1385,7 +1385,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #4f5ddd;
+    background: #1705fa;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2838,5 +2838,22 @@ header.header {
 }
 /* 隱藏文章標題上方的路徑導覽 (Breadcrumb) */
 .breadcrumb {
+  display: none !important;
+}
+/* === 隱藏左下角空盒子 === */
+/* 1. 徹底隱藏個人檔案內容 (Overview) */
+.site-overview-wrap {
+  display: none !important;
+}
+/* 2. 隱藏側邊欄的 Tab 切換按鈕 (因為只剩目錄，不需要切換) */
+.sidebar-nav {
+  display: none !important;
+}
+/* 3. 在「首頁」隱藏整個側邊欄底座 (避免出現空方塊) */
+.page-home .sidebar-inner {
+  display: none !important;
+}
+/* 4. (保險起見) 針對沒有 body class 的首頁結構隱藏 */
+.index .sidebar-inner {
   display: none !important;
 }
